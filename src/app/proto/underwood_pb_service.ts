@@ -14,4 +14,12 @@ export namespace LiveChecker {
     static readonly requestType = proto_underwood_pb.LiveRequest;
     static readonly responseType = proto_underwood_pb.LiveReply;
   }
+  export class Ping {
+    static readonly methodName = "Ping";
+    static readonly service = LiveChecker;
+    static readonly requestStream = false;
+    static readonly responseStream = true;
+    static readonly requestType = proto_underwood_pb.PingRequest;
+    static readonly responseType = proto_underwood_pb.PingResponse;
+  }
 }
